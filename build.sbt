@@ -3,14 +3,18 @@ ThisBuild / organization := "com.alejandrohdezma"
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
-addCommandAlias("ci-test", "fix --check; mdoc; test; publishLocal; scripted")
-addCommandAlias("ci-docs", "mdoc; headerCreateAll")
+addCommandAlias("ci-test", "fix --check; docs/mdoc; test; publishLocal; scripted")
+addCommandAlias("ci-docs", "docs/mdoc; headerCreateAll")
 
-lazy val `root` = project
+lazy val `sbt-mdoc-toc-root` = project
   .in(file("."))
-  .settings(name := "sbt-mdoc-toc")
   .aggregate(`sbt-mdoc-toc`, `mdoc-toc-generator`)
+  .settings(skip in publish := true)
+
+lazy val `docs` = project
+  .in(file("sbt-mdoc-toc-docs"))
   .dependsOn(`mdoc-toc-generator`)
+  .settings(name := "sbt-mdoc-toc")
   .settings(skip in publish := true)
   .enablePlugins(MdocPlugin)
   .settings(mdocOut := file("."))
