@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.2](https://github.com/alejandrohdezma/sbt-mdoc-toc/tree/v0.2) (2020-02-23)
+
+[Full Changelog](https://github.com/alejandrohdezma/sbt-mdoc-toc/compare/v0.1...v0.2)
+
 ## [v0.1](https://github.com/alejandrohdezma/sbt-mdoc-toc/tree/v0.1) (2020-02-17)
 
 [Full Changelog](https://github.com/alejandrohdezma/sbt-mdoc-toc/compare/c60eb50f755092d4c4228ffa31b6473625d448a4...v0.1)
