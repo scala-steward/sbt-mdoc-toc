@@ -3,7 +3,7 @@ ThisBuild / organization := "com.alejandrohdezma"
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
-addCommandAlias("ci-test", "fix --check; docs/mdoc; test; publishLocal; scripted")
+addCommandAlias("ci-test", "fix --check; docs/mdoc; +test; +publishLocal; scripted")
 addCommandAlias("ci-docs", "docs/mdoc; headerCreateAll")
 
 lazy val `sbt-mdoc-toc-root` = project
@@ -27,6 +27,7 @@ lazy val `sbt-mdoc-toc` = project
 
 lazy val `mdoc-toc-generator` = project
   .enablePlugins(BuildInfoPlugin)
+  .settings(crossScalaVersions := Seq("2.12.10", "2.13.1"))
   .settings(buildInfoPackage := "com.alejandrohdezma.mdoc.toc.generator")
   .settings(libraryDependencies += "org.scalameta" %% "mdoc" % "[2.0,)" % Provided)
   .settings(libraryDependencies += "org.specs2" %% "specs2-core" % "4.8.3" % Test)
