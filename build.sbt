@@ -11,6 +11,7 @@ lazy val `root` = project
   .settings(name := "sbt-mdoc-toc")
   .aggregate(`sbt-mdoc-toc`, `mdoc-toc-generator`)
   .dependsOn(`mdoc-toc-generator`)
+  .settings(skip in publish := true)
   .enablePlugins(MdocPlugin)
   .settings(mdocOut := file("."))
 
