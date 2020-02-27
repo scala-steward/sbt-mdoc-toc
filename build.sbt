@@ -23,11 +23,11 @@ lazy val `sbt-mdoc-toc` = project
   .dependsOn(`mdoc-toc-generator`)
   .enablePlugins(SbtPlugin)
   .settings(scriptedLaunchOpts += s"-Dplugin.version=${version.value}")
-  .settings(addSbtPlugin("org.scalameta" % "sbt-mdoc" % "[2.0,)" % Provided))
+  .settings(addSbtPlugin("org.scalameta" % "sbt-mdoc" % "[2.0,)" % Provided)) // scala-steward:off
 
 lazy val `mdoc-toc-generator` = project
   .enablePlugins(BuildInfoPlugin)
   .settings(crossScalaVersions := Seq("2.12.10", "2.13.1"))
   .settings(buildInfoPackage := "com.alejandrohdezma.mdoc.toc.generator")
-  .settings(libraryDependencies += "org.scalameta" %% "mdoc" % "[2.0,)" % Provided)
+  .settings(libraryDependencies += "org.scalameta" %% "mdoc" % "[2.0,)" % Provided) // scala-steward:off
   .settings(libraryDependencies += "org.specs2" %% "specs2-core" % "4.8.3" % Test)
