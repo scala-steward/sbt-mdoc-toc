@@ -1,13 +1,5 @@
 # Changelog
 
-## [Unreleased](https://github.com/alejandrohdezma/sbt-mdoc-toc/tree/HEAD)
-
-[Full Changelog](https://github.com/alejandrohdezma/sbt-mdoc-toc/compare/v0.2...HEAD)
-
-**Merged pull requests:**
-
-- Update specs2-core to 4.9.0 [\#15](https://github.com/alejandrohdezma/sbt-mdoc-toc/pull/15) ([scala-steward](https://github.com/scala-steward))
-
 ## [v0.2](https://github.com/alejandrohdezma/sbt-mdoc-toc/tree/v0.2) (2020-02-23)
 
 [Full Changelog](https://github.com/alejandrohdezma/sbt-mdoc-toc/compare/v0.1...v0.2)
