@@ -19,7 +19,6 @@ lazy val `docs` = project
   .in(file("sbt-mdoc-toc-docs"))
   .enablePlugins(MdocPlugin)
   .dependsOn(`mdoc-toc-generator`)
-  .settings(name := "sbt-mdoc-toc")
   .settings(skip in publish := true)
   .settings(mdocOut := file("."))
 
