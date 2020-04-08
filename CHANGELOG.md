@@ -14,7 +14,7 @@
 - Update sbt-mdoc to 2.1.3 [\#26](https://github.com/alejandrohdezma/sbt-mdoc-toc/pull/26) ([scala-steward](https://github.com/scala-steward))
 - Update specs2-core to 4.9.2 [\#21](https://github.com/alejandrohdezma/sbt-mdoc-toc/pull/21) ([scala-steward](https://github.com/scala-steward))
 - Update sbt-github-header, sbt-github-mdoc to 0.6.0 [\#20](https://github.com/alejandrohdezma/sbt-mdoc-toc/pull/20) ([scala-steward](https://github.com/scala-steward))
-- Update specs2-core to 4.9.1 [\#16](https://github.com/alejandrohdezma/sbt-mdoc-toc/pull/16) ([scala-steward](https://github.com/scala-steward))
+- Update specs2-core to 4.9.3 [\#16](https://github.com/alejandrohdezma/sbt-mdoc-toc/pull/16) ([scala-steward](https://github.com/scala-steward))
 - Update specs2-core to 4.9.0 [\#15](https://github.com/alejandrohdezma/sbt-mdoc-toc/pull/15) ([scala-steward](https://github.com/scala-steward))
 - Update sbt-tpolecat to 0.1.11 [\#9](https://github.com/alejandrohdezma/sbt-mdoc-toc/pull/9) ([scala-steward](https://github.com/scala-steward))
 
