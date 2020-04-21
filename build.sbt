@@ -3,8 +3,8 @@ ThisBuild / organization := "com.alejandrohdezma"
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
-addCommandAlias("ci-test", "fix --check; docs/mdoc; +test; +publishLocal; scripted")
-addCommandAlias("ci-docs", "docs/mdoc; headerCreateAll")
+addCommandAlias("ci-test", "fix --check; mdoc; +test; +publishLocal; scripted")
+addCommandAlias("ci-docs", "github; mdoc; headerCreateAll")
 
 //These are the only external dependencies
 val `sbt-mdoc` = "org.scalameta" % "sbt-mdoc" % "[2.0,)" % Provided // scala-steward:off
