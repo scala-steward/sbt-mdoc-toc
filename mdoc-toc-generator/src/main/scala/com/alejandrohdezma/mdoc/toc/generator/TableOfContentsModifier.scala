@@ -18,7 +18,8 @@ package com.alejandrohdezma.mdoc.toc.generator
 
 import scala.meta.inputs.Input
 
-import mdoc.{PostModifier, PostModifierContext}
+import mdoc.PostModifier
+import mdoc.PostModifierContext
 
 /**
  * Parses markdown files and generates its table of contents
