@@ -10,10 +10,7 @@ addCommandAlias("ci-docs", "docs/mdoc; headerCreateAll")
 val `sbt-mdoc` = "org.scalameta" % "sbt-mdoc" % "[2.0,)" % Provided // scala-steward:off
 val mdoc       = "org.scalameta" %% "mdoc"    % "[2.0,)" % Provided // scala-steward:off
 
-lazy val `root` = project
-  .in(file("."))
-  .aggregate(`sbt-mdoc-toc`, `mdoc-toc-generator`)
-  .settings(skip in publish := true)
+skip in publish := true
 
 lazy val `docs` = project
   .in(file("sbt-mdoc-toc-docs"))
