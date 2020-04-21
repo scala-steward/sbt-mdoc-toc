@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "2.12.10"
+ThisBuild / scalaVersion := "2.12.11"
 ThisBuild / organization := "com.alejandrohdezma"
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
@@ -30,7 +30,7 @@ lazy val `sbt-mdoc-toc` = project
 
 lazy val `mdoc-toc-generator` = project
   .enablePlugins(BuildInfoPlugin)
-  .settings(crossScalaVersions := Seq("2.12.10", "2.13.1"))
+  .settings(crossScalaVersions := Seq("2.12.11", "2.13.1"))
   .settings(buildInfoPackage := "com.alejandrohdezma.mdoc.toc.generator")
   .settings(libraryDependencies += mdoc)
   .settings(libraryDependencies += "org.specs2" %% "specs2-core" % "4.9.2" % Test)
